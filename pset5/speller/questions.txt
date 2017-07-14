@@ -1,0 +1,10 @@
+0.  It is the longest word in the dictionary.
+1.  It returns resource usage measures for who, which can be either SELF, CHILDREN or THREAD.
+2.  There are 16 variables of type struct rusage.
+3.  We have to pass in reference in case &before or &after are NULL, to prevent an error.
+4.  For each iteration, get a char c from a file pointed to by fp until you reach the EOF. If the char is an alphabetical letter or
+    apostrophe, append the character to the array word. The word is ignored if it longer than the longest word defined or if it has 
+    any digits. If a whole word is found, word count is incremented, the spelling is checked and the word is printed if it is 
+    misspelled.
+5.  We use fgetc in case there are characters other than letters and apostrophes in the string.
+6.  The address of the word and the address of the dictionary will not change.
